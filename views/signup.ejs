@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>The Mesh | Sign up</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" />
+        <link rel="stylesheet" href="../public/styles/preloader.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="../public/js/preloader.js"></script>
+    </head>
+    <body style="background-image: url('../public/images/back1.png');"><script>document.body.className += ' fade-out';</script>
+        <div id="load_screen"><div id="loading"><div class="container">
+                <div class="item item-1"></div>
+                <div class="item item-2"></div>
+                <div class="item item-3"></div>
+                <div class="item item-4"></div>
+              </div></div></div>    
+        <div class="ui container" style="margin-top:50px;">
+            <center>
+                <h1>The Mesh | Sign up</h1>
+                <form class="ui form" style="width:60%;" action="/signup" method="POST">
+                        <div class="field">
+                          <label>First Name</label>
+                          <input name="first-name" placeholder="First Name" type="text">
+                        </div>
+                        <div class="field">
+                          <label>Last Name</label>
+                          <input name="last-name" placeholder="Last Name" type="text">
+                        </div>
+                        <div class="field">
+                            <label>Email</label>
+                            <input name="email" placeholder="Email" type="email">
+                        </div>
+                        <div class="field">
+                            <label>Date of Birth</label>
+                                <div class="ui left icon input">
+                                 <input name="date-of-birth" placeholder="Date of Birth" type="date" value="<%=new Date().getFullYear()%>-<%=new Date().getMonth()+1%>-<%=new Date().getDate()%>">
+                                 <i class="calendar icon"></i>
+                                </div>
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <input name="password" placeholder="Password" type="password">
+                        </div>
+                        <div class="field">
+                            <label>Confirm Password</label>
+                            <input name="confirm-password" placeholder="Confirm Password" type="password">
+                            </div>
+                        <div class="field">
+                          <div class="ui checkbox">
+                            <input tabindex="0" class="hidden" type="checkbox" id="checkbox" name="checkbox">
+                            <label for="checkbox">I agree to the Terms and Conditions</label>
+                          </div>
+                        </div>
+                        <button class="ui button" type="submit">Submit</button>
+                      </form>
+                      <button class="ui google plus button">
+                            <i class="google plus icon"></i>
+                            Sign in with Google
+                      </button>
+                      <button class="ui facebook button">
+                        <i class="facebook icon"></i>
+                        Sign in with Facebook
+                      </button>
+        </div>
+    </body>
+</html>
